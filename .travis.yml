@@ -1,0 +1,53 @@
+language: node_js
+
+os: linux
+
+node_js:
+  - node
+
+dist: trusty
+
+sudo: required
+
+addons:
+  chrome: stable
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+install:
+  - npm install firebase @angular/fire --save
+  - npm install firebase-tools -global
+  - npm install
+
+before_install:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+
+script:
+  - npm run test
+  - npm run build-prod
+  - cd dist/poc-estudos-angular
+  - cp index.html 404.html
+
+branches:
+  only:
+    - master
+
+env:
+  - EMBER_VERSION=release
+
+jobs:
+  fast_finish: true
+  allow_failures:
+    - env: EMBER_VERSION=release
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/poc-estudos-angular
+  on:
+    branch: master
