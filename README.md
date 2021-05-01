@@ -12,8 +12,6 @@
 
 ## Github Pages
 
----
-
 <br>
 
 > Aplicação em Angular para estudos, CI/CD Travis com Deploy gh-pages<br>
@@ -23,15 +21,11 @@
 
 ## GitPod
 
----
-
 [![Open in Gitpod][open-gitpod-img]][open-gitpod-url]
 
 <br>
 
 ## Gerando o Projeto
-
----
 
 ```
 ng new poc-estudos-angular --routing=true --strict=true --style=scss
@@ -40,8 +34,6 @@ ng new poc-estudos-angular --routing=true --strict=true --style=scss
 <br>
 
 ## Instalando os pacotes NPM
-
----
 
 <br>
 
