@@ -1,16 +1,38 @@
 {
   "name": "poc-estudos-angular",
-  "version": "0.0.0",
+  "description": "",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
+    "build-prod": "ng build --prod --aot --deploy-url ./ --base-href ./",
+    "test": "ng test --no-watch --no-progress --code-coverage --browsers ChromeHeadlessNoSandbox",
+    "test-dev": "ng test --code-coverage --progress --browsers Chrome",
+    "lint": "npx ng lint",
+    "e2e": "ng e2e --port 4201",
     "prettier-write": "npx prettier --write --ignore-unknown .",
-    "prettier-check": "npx prettier --check ."
+    "prettier-check": "npx prettier --check .",
+    "pre-commit": "npm run lint && npm run test && npm run e2e",
+    "postinstall": "husky install"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martins86/poc-estudos-angular.git"
+  },
+  "keywords": [],
+  "author": "Thiago Martins de Freitas",
+  "email": "martins86@gmail.com",
+  "url": "https://www.linkedin.com/in/tmfreitas/",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martins86/poc-estudos-angular/issues",
+    "email": "martins86@gmail.com"
+  },
+  "engines": {
+    "node": "^12.18.3"
+  },
+  "homepage": "https://martins86.github.io/poc-estudos-angular/",
   "private": true,
   "dependencies": {
     "@angular/animations": "~11.2.4",
@@ -39,6 +61,7 @@
     "@typescript-eslint/eslint-plugin": "4.16.1",
     "@typescript-eslint/parser": "4.16.1",
     "eslint": "^7.6.0",
+    "husky": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.1.0",
