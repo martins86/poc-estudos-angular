@@ -1,0 +1,63 @@
+<header>
+  <div class="ps-4 pe-4 overflow-hidden">
+    <div class="row g-0 d-flex align-items-center">
+      <div class="col-auto">
+        <div id="menu-left">
+          <button mat-button id="btn-hamburguer">
+            <input type="checkbox" id="menu-checked" />
+            <label
+              for="menu-checked"
+              class="link-checkbox"
+              (click)="toggleLeftBar()"
+            >
+              <div class="hamburguer"></div>
+            </label>
+          </button>
+        </div>
+      </div>
+      <div class="col">
+        <div id="logo">
+          <img
+            [src]="logotipoBranco | BypassSecuritySafe: 'resourceUrl'"
+            alt="logo tmf86"
+          />
+        </div>
+      </div>
+      <div class="col">
+        <div id="menu-right">
+          <ul>
+            <li>
+              <button mat-button title="Acesso as configurações">
+                <mat-icon svgIcon="settings"></mat-icon>
+              </button>
+            </li>
+            <li>
+              <button mat-button title="Saiba mais..">
+                <mat-icon svgIcon="help_outline"></mat-icon>
+              </button>
+            </li>
+            <li>
+              <button mat-button [matMenuTriggerFor]="menu" id="menu-person">
+                <mat-icon svgIcon="person"></mat-icon>
+              </button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                  <mat-icon svgIcon="login"></mat-icon>
+                  Entrar
+                </button>
+                <button mat-menu-item>
+                  <mat-icon svgIcon="manage_accounts"></mat-icon>
+                  Editar Perfil
+                </button>
+                <button mat-menu-item>
+                  <mat-icon svgIcon="logout"></mat-icon>
+                  Sair
+                </button>
+              </mat-menu>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
