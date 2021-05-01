@@ -10,16 +10,14 @@
 
 <br>
 
-## Github Pages
+> Aplicação em Angular para estudos.<br>
+> CI/CD Lint Staged, Husky e Travis com Deploy gh-pages<br>
+> GitHub Pages - [Aplicação](https://martins86.github.io/poc-estudos-angular/)<br>
+> Gitpod - [Ambiente de dev][open-gitpod-url]
 
 <br>
 
-> Aplicação em Angular para estudos, CI/CD Travis com Deploy gh-pages<br>
-> GitHub Pages - [Aplicação](https://martins86.github.io/poc-estudos-angular/)
-
-<br>
-
-## GitPod
+## Gitpod
 
 [![Open in Gitpod][open-gitpod-img]][open-gitpod-url]
 
@@ -134,49 +132,17 @@ Login: firebase login
 
 # Criando estrutura
 
-### Core :
-
-```
-ng g guard core/guard/auth-guard
-
-ng g interceptor core/interceptor/http-request
-```
+### Core : [Core da Aplicação](https://github.com/martins86/poc-estudos-angular/tree/master/src/app/core/readme.md)
 
 <br>
 <br>
 
-### Pages :
-
-```
-ng g m pages/home-page --module app --routing
-ng g c pages/home-page
-
-ng g m pages/not-found-page --module app --routing
-ng g c pages/not-found-page
-```
+### Pages : [Páginas](https://github.com/martins86/poc-estudos-angular/tree/master/src/app/pages/readme.md)
 
 <br>
 <br>
 
-### Shared :
-
-```
-ng g m shared/layout/top-bar
-ng g c shared/layout/top-bar
-
-ng g m shared/layout/left-bar
-ng g c shared/layout/left-bar
-
-ng g m shared/layout/bottom-bar
-ng g c shared/layout/bottom-bar
-
-ng g class shared/models/user-session --type=model --skip-tests=true
-
-ng g s shared/services/registry-icons/registry-icons
-
-ng g m shared/pipes
-ng g p shared/pipes/bypass-security/bypass-security
-```
+### Shared : [Itens Compartilhados](https://github.com/martins86/poc-estudos-angular/tree/master/src/app/shared/readme.md)
 
 <br>
 <br>
@@ -193,7 +159,7 @@ ng g p shared/pipes/bypass-security/bypass-security
 | npm run e2e            | Rodando testes end-to-end (e2e).                | ng e2e --port 4201                                                                  |
 | npm run prettier-write | Checa, Organiza e Otimiza (formatado) o código. | npx prettier --write --ignore-unknown .                                             |
 | npm run prettier-check | Checa se o código esta formatado.               | npx prettier --check .                                                              |
-| npm run pre-commit     | Rodando ts lint, testes unitários e testes e2e. | npm run lint && npm run test && npm run e2e                                         |
+| npm run pre-commit     | Rodando eslint, testes unitários e testes e2e.  | npm run lint && npm run test && npm run e2e                                         |
 
 <br>
 <br>
@@ -222,6 +188,7 @@ ng g p shared/pipes/bypass-security/bypass-security
 
 <!-- Markdown link & images -->
 
+[open-github-pages]: https://img.shields.io/badge/Aplica%C3%A7%C3%A3o-GitHubPages-blue
 [open-gitpod-img]: https://gitpod.io/button/open-in-gitpod.svg
 [open-gitpod-url]: https://www.gitpod.io/#https://github.com/martins86/poc-estudos-angular
 [travis-img]: https://travis-ci.com/martins86/poc-estudos-angular.svg?branch=master
