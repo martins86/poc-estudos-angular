@@ -1,0 +1,26 @@
+<div class="profile-card">
+  <div class="header">
+    <mat-icon svgIcon="account_circle"></mat-icon>
+    <h2>Estudos Angular</h2>
+  </div>
+</div>
+
+<mat-nav-list>
+  <mat-list>
+    <mat-divider></mat-divider>
+    <div class="nav-pages">
+      <div mat-subheader>Páginas</div>
+      <mat-divider></mat-divider>
+      <mat-list-item
+        [routerLink]="['/']"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="active"
+        (click)="closeLeftBar()"
+      >
+        <mat-icon mat-list-icon svgIcon="home"></mat-icon>
+        <div mat-line>Inicial</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+    </div>
+  </mat-list>
+</mat-nav-list>
