@@ -1,0 +1,36 @@
+@import "./../assets/styles/colors";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+app-top-bar.app-top-bar {
+  height: 64px;
+}
+
+mat-drawer-container {
+  background-color: transparent;
+  height: calc(100vh - 124px);
+
+  mat-drawer {
+    width: 300px;
+    background-color: $color-dark-grayish-navy;
+  }
+
+  mat-drawer-content {
+    color: $color-black-russian;
+  }
+}
+
+app-bottom-bar.app-bottom-bar {
+  height: 60px;
+}
+
+// Agrupados
+app-bottom-bar.app-bottom-bar,
+app-top-bar.app-top-bar {
+  width: 100vw;
+  background-color: $color-vivid-violet;
+}
