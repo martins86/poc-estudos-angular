@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "estudos-angular-214b1": {
+      "hosting": {
+        "poc-estudos-angular": [
+          "estudos-angular-214b1"
+        ]
+      }
+    }
+  }
+}

@@ -135,7 +135,6 @@ Pacote: npm install firebase --save
 Pacote Global: npm install -global firebase-tools
 Angular Fire: ng add @angular/fire@next
 Login: firebase login
-Inicio: firebase init
 ```
 
 <br>
@@ -227,7 +226,6 @@ ng g p shared/pipes/bypass-security/bypass-security
 | Husky          | https://www.npmjs.com/package/husky          | ![GitHub package.json dependency version (dev dep on branch)][husky-img]          |
 | Lint Staged    | https://www.npmjs.com/package/lint-staged    | ![GitHub package.json dependency version (dev dep on branch)][lint-staged-img]    |
 | Prettier       | https://www.npmjs.com/package/prettier       | ![GitHub package.json dependency version (dev dep on branch)][prettier-img]       |
-| Lite Server    | https://www.npmjs.com/package/lite-server    | ![GitHub package.json dependency version (dev dep on branch)][lite-server-img]    |
 | Firebase Tools | https://www.npmjs.com/package/firebase-tools | ![GitHub package.json dependency version (dev dep on branch)][firebase-tools-img] |
 
 <!-- Markdown link & images -->
@@ -255,5 +253,4 @@ ng g p shared/pipes/bypass-security/bypass-security
 [husky-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular/dev/husky
 [lint-staged-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular/dev/lint-staged
 [prettier-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular/dev/prettier
-[lite-server-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular/dev/lite-server
 [firebase-tools-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular/dev/firebase-tools
