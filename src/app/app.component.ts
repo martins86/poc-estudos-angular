@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'poc-estudos-angular';
+  leftBarOpen = false;
+
+  leftBarToggle(): void {
+    this.leftBarOpen = !this.leftBarOpen;
+  }
+
+  closeLeftBar(): void {
+    this.leftBarOpen = false;
+  }
 }

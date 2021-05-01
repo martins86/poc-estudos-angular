@@ -1,0 +1,111 @@
+@import "./../../../../assets/styles/colors";
+
+header div.row {
+  height: 64px;
+}
+
+#menu-left {
+  height: 24px;
+
+  button#btn-hamburguer {
+    min-width: 30px;
+    max-height: 30px;
+    line-height: normal;
+    padding: 0;
+  }
+
+  input#menu-checked {
+    display: none;
+  }
+
+  .link-checkbox {
+    cursor: pointer;
+    padding: 14px 2px 16px 3px;
+    width: 30px;
+  }
+
+  .link-checkbox .hamburguer,
+  .link-checkbox .hamburguer::before,
+  .link-checkbox .hamburguer::after {
+    background-color: $color-white;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition: background ease 0.3s, top ease 0.3s 0.3s, transform ease 0.3s;
+    width: 24px;
+  }
+
+  .link-checkbox:hover .hamburguer,
+  .link-checkbox:hover .hamburguer::before,
+  .link-checkbox:hover .hamburguer::after {
+    background-color: $color-whisper;
+  }
+
+  .link-checkbox .hamburguer::before {
+    top: -6px;
+  }
+
+  .link-checkbox .hamburguer::after {
+    top: 6px;
+  }
+
+  #menu-checked:checked + .link-checkbox .hamburguer {
+    background: transparent;
+  }
+
+  #menu-checked:checked + .link-checkbox .hamburguer::before {
+    transform: rotate(45deg);
+  }
+
+  #menu-checked:checked + .link-checkbox .hamburguer::after {
+    transform: rotate(-45deg);
+  }
+
+  #menu-checked:checked + .link-checkbox .hamburguer::before,
+  #menu-checked:checked + .link-checkbox .hamburguer::after {
+    top: 0;
+    transition: top ease 0.3s, transform ease 0.3s 0.3s;
+  }
+}
+
+#logo {
+  margin-left: 25px;
+
+  img {
+    width: 80px;
+  }
+}
+
+#menu-right {
+  display: flex;
+  justify-content: flex-end;
+
+  ul {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  button.mat-focus-indicator.mat-button.mat-button-base {
+    line-height: normal;
+    min-width: 20px;
+    padding: 0 10px;
+  }
+
+  #menu-person {
+    padding: 0 20px;
+  }
+}
+
+// Agrupados
+#menu-left,
+#menu-right,
+button.mat-focus-indicator.mat-button.mat-button-base {
+  height: 30px;
+}
