@@ -120,7 +120,7 @@ Bootstrap - [Bootstrap](https://getbootstrap.com/) :
 ---
 
 ```
-Pacote Dev: npm install bootstrap --save
+Pacote Dev: npm install bootstrap@next --save
 ```
 
 <br>
