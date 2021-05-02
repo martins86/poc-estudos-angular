@@ -30,7 +30,7 @@ ng g c shared/layout/bottom-bar
 <br>
 
 ```
-ng g interface shared/models/user-session --type=model --skip-tests=true
+ng g interface shared/models/user-session --type=model
 ```
 
 <br>

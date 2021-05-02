@@ -1,1 +1,1 @@
-export class UserSession {}
+export interface UserSession {}
