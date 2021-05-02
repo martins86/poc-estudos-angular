@@ -19,3 +19,13 @@ ng g guard core/auth/service/auth-guard
 ```
 ng g interceptor core/interceptor/http-request
 ```
+
+<br>
+
+### Core / Seo :
+
+<br>
+
+```
+ng g s core/seo/seo
+```
