@@ -8,13 +8,13 @@ import { MatMenuModule } from '@angular/material/menu';
 
 const materialModule = [MatButtonModule, MatIconModule, MatMenuModule];
 
-import { BypassSecurityPipe } from '@shared/pipes/bypass-security/bypass-security.pipe';
+import { PipesModule } from '@shared/pipes/pipes.module';
 
 import { TopBarComponent } from './top-bar.component';
 
 @NgModule({
-  declarations: [TopBarComponent, BypassSecurityPipe],
-  imports: [CommonModule, HttpClientModule, materialModule],
+  declarations: [TopBarComponent],
+  imports: [CommonModule, HttpClientModule, PipesModule, ...materialModule],
   exports: [TopBarComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
