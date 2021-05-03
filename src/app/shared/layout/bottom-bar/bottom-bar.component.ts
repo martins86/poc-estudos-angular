@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-bottom-bar',
   template: `
     <footer>
-      <div class="ps-4 pe-4 overflow-hidden">
+      <div class="pl-4 pr-4 overflow-hidden">
         <div class="row d-flex align-items-center">
           <div class="col">
             <small>
