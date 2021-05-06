@@ -8,9 +8,16 @@ const routes: Routes = [
       import('@pages/home/home.module').then((module) => module.HomeModule),
   },
   {
-    path: '',
+    path: 'home',
     redirectTo: '',
     pathMatch: 'full',
+  },
+  {
+    path: '**',
+    loadChildren: () =>
+      import('@pages/not-found/not-found.module').then(
+        (module) => module.NotFoundModule
+      ),
   },
 ];
 
