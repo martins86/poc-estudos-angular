@@ -1,17 +1,21 @@
 # Páginas
 
-### Pages :
+### Pages / Home :
 
 <br>
 
 ```
-ng g m pages/home-page --module app --routing
-ng g c pages/home-page
+ng g m pages/home --module app --routing
+ng g c pages/home
 ```
 
 <br>
 
+### Pages / Not Found :
+
+<br>
+
 ```
-ng g m pages/not-found-page --module app --routing
-ng g c pages/not-found-page
+ng g m pages/not-found --module app --routing
+ng g c pages/not-found
 ```
