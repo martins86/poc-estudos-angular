@@ -12,6 +12,11 @@ import { BottomBarModule } from '@shared/layout/bottom-bar/bottom-bar.module';
 const layoutModule = [TopBarModule, LeftBarModule, BottomBarModule];
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { HomeModule } from './pages/home/home.module';
+
+const pagesModule = [HomeModule];
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -23,6 +28,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     MatSidenavModule,
     ...layoutModule,
+    ...pagesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
