@@ -14,9 +14,10 @@ const layoutModule = [TopBarModule, LeftBarModule, BottomBarModule];
 import { AppRoutingModule } from './app-routing.module';
 
 import { HomeModule } from './pages/home/home.module';
+import { DemosModule } from './pages/demos/demos.module';
 import { NotFoundModule } from './pages/not-found/not-found.module';
 
-const pagesModule = [HomeModule, NotFoundModule];
+const pagesModule = [HomeModule, DemosModule, NotFoundModule];
 
 import { AppComponent } from './app.component';
 
