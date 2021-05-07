@@ -31,6 +31,7 @@ export class LeftBarComponent {
       'login',
       'manage_accounts',
       'logout',
+      'web',
     ];
     this.iconRegistryService.registryIcons(iconsNames);
   }

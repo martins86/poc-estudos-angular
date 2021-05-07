@@ -11,8 +11,18 @@
     }
   }
 }
-
 mat-nav-list {
+  margin-top: 40px;
+
+  .mat-subheader,
+  mat-list-item {
+    border-top: 1px solid $color-grey-light;
+  }
+
+  mat-list-item {
+    border-bottom: 1px solid $color-grey-light;
+  }
+
   h2 {
     color: $color-hoki;
     margin: 6px 0 0 9px;
