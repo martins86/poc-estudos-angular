@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { DemosComponent } from './demos.component';
 import { DemosModule } from './demos.module';
@@ -9,7 +11,7 @@ describe('DemosComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DemosModule],
+      imports: [RouterTestingModule, BrowserAnimationsModule, DemosModule],
       declarations: [DemosComponent],
     }).compileComponents();
   });
@@ -17,7 +19,6 @@ describe('DemosComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(DemosComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {

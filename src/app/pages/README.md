@@ -18,6 +18,9 @@ ng g c pages/home
 ```
 ng g m pages/demos --module app --routing
 ng g c pages/demos
+
+ng g m pages/demos/demo-list --module demos --routing
+ng g c pages/demos/demo-list
 ```
 
 <br>
