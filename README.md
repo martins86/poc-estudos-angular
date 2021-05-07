@@ -132,15 +132,15 @@ Login: firebase login
 
 # Criando estrutura
 
-- Core : [Core da Aplicação](https://github.com/martins86/poc-estudos-angular/blob/master/src/app/core/readme.md)
+- Core : [Core da Aplicação](https://github.com/martins86/poc-estudos-angular/blob/master/src/app/core/README.md)
 
 <br>
 
-- Pages : [Páginas](https://github.com/martins86/poc-estudos-angular/blob/master/src/app/pages/readme.md)
+- Pages : [Páginas](https://github.com/martins86/poc-estudos-angular/blob/master/src/app/pages/README.md)
 
 <br>
 
-- Shared : [Itens Compartilhados](https://github.com/martins86/poc-estudos-angular/blob/master/src/app/shared/readme.md)
+- Shared : [Itens Compartilhados](https://github.com/martins86/poc-estudos-angular/blob/master/src/app/shared/README.md)
 
 <br>
 
