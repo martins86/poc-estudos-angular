@@ -9,6 +9,11 @@ const routes: Routes = [
     component: DemosComponent,
     children: [
       {
+        path: 'demos',
+        redirectTo: '',
+        pathMatch: 'full',
+      },
+      {
         path: '',
         loadChildren: () =>
           import('@pages/demos/demo-list/demo-list.module').then(
@@ -21,11 +26,6 @@ const routes: Routes = [
           import(
             '@pages/demos/firebase/realtime-database/realtime-database.module'
           ).then((module) => module.RealtimeDatabaseModule),
-      },
-      {
-        path: 'demos',
-        redirectTo: '',
-        pathMatch: 'full',
       },
     ],
   },
