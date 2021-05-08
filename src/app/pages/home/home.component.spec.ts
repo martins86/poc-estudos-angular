@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { HomeModule } from './home.module';
 
@@ -10,7 +11,7 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HomeModule],
+      imports: [HttpClientTestingModule, HomeModule],
       declarations: [HomeComponent],
     }).compileComponents();
   });
@@ -23,5 +24,18 @@ describe('HomeComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  describe('Testing OnInit', () => {
+    it('should call dataClient on component Init', () => {
+      // Arrange
+      spyOn(component, 'dataClient').and.callThrough();
+
+      // Act
+      component.ngOnInit();
+
+      // Assert
+      expect(component.dataClient).toHaveBeenCalled();
+    });
   });
 });

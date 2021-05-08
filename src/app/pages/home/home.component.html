@@ -1,1 +1,4 @@
-<p>home works!</p>
+<h1>Hello Word!</h1>
+<ng-container *ngIf="clients.length > 0">
+  <h3 *ngFor="let client of clients">Olá, {{ client.name }}</h3>
+</ng-container>
