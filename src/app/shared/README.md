@@ -30,7 +30,7 @@ ng g c shared/layout/bottom-bar
 <br>
 
 ```
-ng g interface shared/models/user-session --type=model
+ng g class shared/models/data-user-session --type=model
 ```
 
 <br>
@@ -41,6 +41,9 @@ ng g interface shared/models/user-session --type=model
 
 ```
 ng g s shared/services/registry-icons/registry-icons
+
+ng g s shared/services/crud-operations/crud
+ng g class shared/services/crud-operations/models/data-crud-operations --type=model
 ```
 
 <br>
