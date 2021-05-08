@@ -1,7 +1,7 @@
 {
   "name": "poc-estudos-angular",
   "description": "",
-  "version": "1.1.1",
+  "version": "1.1.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -14,7 +14,8 @@
     "prettier-write": "npx prettier --write --ignore-unknown .",
     "prettier-check": "npx prettier --check .",
     "pre-commit": "npm run lint && npm run test && npm run e2e",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "start-server": "json-server --watch db.json"
   },
   "repository": {
     "type": "git",
