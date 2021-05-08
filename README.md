@@ -130,6 +130,17 @@ Login: firebase login
 <br>
 <br>
 
+JSON Server - [json-server](https://github.com/typicode/json-server) :
+
+---
+
+```
+Pacote Global: npm install -global json-server
+Iniciando: json-server --watch db.json
+```
+
+<br>
+<br>
 # Criando estrutura
 
 - Core : [Core da Aplicação](https://github.com/martins86/poc-estudos-angular/blob/master/src/app/core/README.md)
@@ -160,6 +171,11 @@ src/
 |   |   |   |   └── ...
 |   |   |   └── ...
 |   |   ├── home/
+|   |   |   ├── shared/
+|   |   |   |   ├── models/
+|   |   |   |   |   └── ...
+|   |   |   |   ├── services/
+|   |   |   |   |   └── ...
 |   |   |   └── ...
 |   |   ├── not-found/
 |   |   |   └── ...
@@ -181,6 +197,10 @@ src/
 |   |   |   └── ...
 |   |   ├── services/
 |   |   |   ├── registry-icons/
+|   |   |   |   └── ...
+|   |   |   ├── crud-operations/
+|   |   |   |   ├── models/
+|   |   |   |   |   └── ...
 |   |   |   |   └── ...
 |   |   |   └── ...
 |   |   └── ...
@@ -216,6 +236,7 @@ src/
 | npm run prettier-write | Checa, Organiza e Otimiza (formatado) o código. | npx prettier --write --ignore-unknown .                                             |
 | npm run prettier-check | Checa se o código esta formatado.               | npx prettier --check .                                                              |
 | npm run pre-commit     | Rodando eslint, testes unitários e testes e2e.  | npm run lint && npm run test && npm run e2e                                         |
+| npm run start-server   | Rodando o JSON-SERVER uma api local fake.       | json-server --watch db.json                                                         |
 
 <br>
 <br>

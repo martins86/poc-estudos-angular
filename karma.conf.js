@@ -26,6 +26,7 @@ module.exports = function (config) {
       reporters: [
         { type: "html", subdir: "report-html" },
         { type: "lcov", subdir: "report-lcov" },
+        { type: "text-summary" },
       ],
       fixWebpackSourcePaths: true,
     },
@@ -44,7 +45,7 @@ module.exports = function (config) {
         functions: 80,
       },
     },
-    reporters: ["progress", "kjhtml"],
+    reporters: ["progress", "coverage", "kjhtml"],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

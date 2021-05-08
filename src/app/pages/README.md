@@ -7,6 +7,9 @@
 ```
 ng g m pages/home --module app --routing
 ng g c pages/home
+
+ng g s pages/home/shared/services/home
+ng g class pages/home/shared/models/data-home --type=model
 ```
 
 <br>
